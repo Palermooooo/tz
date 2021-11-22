@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+#include <algorithm>
+using namespace std;
+int main()
+{
+    int a[100][100],n, m, k, c = 0, i, j;
+    cin >> n >> m;
+    
+    for (i = 0; i < n; i++) {
+        for (j = 0; j < m; j++) {
+            cin >> a[i][j];
+        }
+    }
+    cin >> k;
+    for (i = 0; i < n; i++) {
+        for (j = 0; j < m; j++) {
+            if (a[i][j] == k) {
+                c++;
+            }
+        }
+    }
+    cout << c;
+    return 0;
+ 
+}

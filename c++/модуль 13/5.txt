@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+int n,m,k,ma=0, mi=10000, a=0,b=0, c=0,d=0 ;
+int e[100][100];
+cin>>n>>m;
+for(int i =1;i<=n;i++)
+for(int j =1;j<=m;j++)
+cin>>e[i][j];
+for(int i =1;i<=n;i++){
+for(int j =1;j<=m;j++)
+{
+if(e[i][j]>ma){
+
+ma=e[i][j];
+a=i; b=j ;}
+
+if(e[i][j]<mi){
+
+mi=e[i][j];
+c=i; d=j ;}
+}}
+cout <<c<<" "<<d<<" "<<mi<<endl<<a<<" "<<b<<" "<<ma;
+}
