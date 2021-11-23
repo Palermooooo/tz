@@ -1,6 +1,6 @@
 
 for (i = 0; i < n; i++)
-2
+
  for (j = 0; j <m; j++) cin>>A[i][j];
 
 
